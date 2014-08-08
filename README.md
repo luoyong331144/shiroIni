@@ -37,4 +37,3 @@ shiro.ini :
 [users]
 luoyong=1234
 LiuXiang=123
-
