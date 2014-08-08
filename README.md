@@ -16,24 +16,26 @@ java code :
 		try {
 			subject.login(token);
 		} catch(UnknownAccountException e) {
-			System.out.println("Error : ²éÎŞ´ËÈË £¡");
+			System.out.println("Error : æŸ¥æ— æ­¤äºº ï¼");
 		} catch(IncorrectCredentialsException e) {
-			System.out.println("Error : ÃÜÂë´íÎó£¡");
+			System.out.println("Error : å¯†ç é”™è¯¯ï¼");
 		} catch(AuthenticationException e) {
-			System.out.println("Error : ÈÏÖ¤Ê§°Ü£¡");
+			System.out.println("Error : è®¤è¯å¤±è´¥ï¼");
 		}
 		
 		if(subject.isAuthenticated()) {
-			System.out.println("Í¨¹ıÈÏÖ¤£¡");
+			System.out.println("é€šè¿‡è®¤è¯ï¼");
 		} else {
-			System.out.println("Ã»ÓĞÍ¨¹ıÈÏÖ¤£¡");
+			System.out.println("æ²¡æœ‰é€šè¿‡è®¤è¯ï¼");
 		}
 		
 		subject.logout();
 	}
 ```
 
-shiro.ini :
+shiro.ini
+```ini
 [users]
 luoyong=1234
 LiuXiang=123
+```
