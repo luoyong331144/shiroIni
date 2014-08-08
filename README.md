@@ -1,9 +1,9 @@
 The most simple example of shiro.
 =================================
-It be running in java environment. Use the ini comfiguration file.
+It be running in the basic java environment. Use the ini comfiguration file.
 ==================================================================
 
-java code :
+#### java code :
 ```java
 	public static void shiroTest() {
 		Factory<SecurityManager> factory = new IniSecurityManagerFactory("classpath:shiro.ini");
@@ -33,7 +33,7 @@ java code :
 	}
 ```
 
-shiro.ini
+#### shiro.ini
 ```ini
 [users]
 luoyong=1234
